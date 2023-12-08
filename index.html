@@ -8,7 +8,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
     <link rel="stylesheet" href="/css/normalize.css" />
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="icon" href="/img/fav.svg" />
@@ -25,154 +25,69 @@
         <p class="drawing__description">
           Выбери рисунок и друзья получат его на свой телефон
         </p>
-        <div class="drawing__wrapper">
-          <div class="drawing__card">
-            <div class="swiper drawing__swiper drawing__swiper-card">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide drawing__card-slide">
-                  <img
-                    class="drawing__card-img"
-                    src="/img/img1.jpg"
-                    alt="img1"
-                  />
-                </div>
-                <div class="swiper-slide drawing__card-slide">
-                  <img
-                    class="drawing__card-img"
-                    src="/img/img2.jpg"
-                    alt="img2"
-                  />
-                </div>
-                <div class="swiper-slide drawing__card-slide">
-                  <img
-                    class="drawing__card-img"
-                    src="/img/img3.jpg"
-                    alt="img3"
-                  />
-                </div>
-                <div class="swiper-slide drawing__card-slide">
-                  <img
-                    class="drawing__card-img"
-                    src="/img/img4.jpg"
-                    alt="img4"
-                  />
-                </div>
-                <div class="swiper-slide drawing__card-slide">
-                  <img
-                    class="drawing__card-img"
-                    src="/img/img5.jpg"
-                    alt="img5"
-                  />
-                </div>
-                <div class="swiper-slide drawing__card-slide">
-                  <img
-                    class="drawing__card-img"
-                    src="/img/img6.jpg"
-                    alt="img6"
-                  />
-                </div>
-                <div class="swiper-slide drawing__card-slide">
-                  <img
-                    class="drawing__card-img"
-                    src="/img/img7.jpg"
-                    alt="img7"
-                  />
-                </div>
-              </div>
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide drawing__card-slide">
+              <img class="drawing__card-img" src="/img/img1.jpg" alt="img1" />
             </div>
-
-            <div class="swiper">
-              <div
-                class="swiper-wrapper drawing__swiper drawing__swiper-sample"
-              >
-                <div class="swiper-slide drawing__card-sample">
-                  <img
-                    class="drawing__card-img"
-                    src="/img/img1.jpg"
-                    alt="img1"
-                  />
-                </div>
-                <div class="swiper-slide drawing__card-sample">
-                  <img
-                    class="drawing__card-img"
-                    src="/img/img1.jpg"
-                    alt="img1"
-                  />
-                </div>
-                <div class="swiper-slide drawing__card-sample">
-                  <img
-                    class="drawing__card-img"
-                    src="/img/img1.jpg"
-                    alt="img1"
-                  />
-                </div>
-                <div class="swiper-slide drawing__card-sample">
-                  <img
-                    class="drawing__card-img"
-                    src="/img/img1.jpg"
-                    alt="img1"
-                  />
-                </div>
-                <div class="swiper-slide drawing__card-sample">
-                  <img
-                    class="drawing__card-img"
-                    src="/img/img1.jpg"
-                    alt="img1"
-                  />
-                </div>
-                <div class="swiper-slide drawing__card-sample">
-                  <img
-                    class="drawing__card-img"
-                    src="/img/img1.jpg"
-                    alt="img1"
-                  />
-                </div>
-                <div class="swiper-slide drawing__card-sample">
-                  <img
-                    class="drawing__card-img"
-                    src="/img/img1.jpg"
-                    alt="img1"
-                  />
-                </div>
-              </div>
+            <div class="swiper-slide drawing__card-slide">
+              <img class="drawing__card-img" src="/img/img2.jpg" alt="img2" />
+            </div>
+            <div class="swiper-slide drawing__card-slide">
+              <img class="drawing__card-img" src="/img/img3.jpg" alt="img3" />
+            </div>
+            <div class="swiper-slide drawing__card-slide">
+              <img class="drawing__card-img" src="/img/img4.jpg" alt="img4" />
+            </div>
+            <div class="swiper-slide drawing__card-slide">
+              <img class="drawing__card-img" src="/img/img5.jpg" alt="img5" />
+            </div>
+            <div class="swiper-slide drawing__card-slide">
+              <img class="drawing__card-img" src="/img/img6.jpg" alt="img6" />
+            </div>
+            <div class="swiper-slide drawing__card-slide">
+              <img class="drawing__card-img" src="/img/img7.jpg" alt="img7" />
             </div>
           </div>
-          <form class="drawing__form form">
-            <label class="form__label">
-              <span class="form__label-text">от кого</span>
-              <input class="form__field" type="text" name="sender_name" />
-            </label>
-
-            <label class="form__label">
-              <span class="form__label-text">телефон отправителя</span>
-              <input class="form__field" type="text" name="sender_phone" />
-            </label>
-
-            <label class="form__label">
-              <span class="form__label-text">кому</span>
-              <input class="form__field" type="text" name="receiver_name" />
-            </label>
-
-            <label class="form__label">
-              <span class="form__label-text">телефон получателя</span>
-              <input class="form__field" type="text" name="receiver_phone" />
-            </label>
-
-            <label class="form__label form__label-textarea">
-              <span class="form__label-text">поздравительный текст</span>
-              <textarea
-                class="form__field form__field-textarea"
-                type="text"
-                name="message"
-                placeholder="Напишите теплые слова"
-              ></textarea>
-            </label>
-            <button class="form__button" type="submit" disabled>
-              Отправить
-            </button>
-          </form>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
         </div>
+
+        <form class="drawing__form form">
+          <label class="form__label">
+            <span class="form__label-text">от кого</span>
+            <input class="form__field" type="text" name="sender_name" />
+          </label>
+
+          <label class="form__label">
+            <span class="form__label-text">телефон отправителя</span>
+            <input class="form__field" type="text" name="sender_phone" />
+          </label>
+
+          <label class="form__label">
+            <span class="form__label-text">кому</span>
+            <input class="form__field" type="text" name="receiver_name" />
+          </label>
+
+          <label class="form__label">
+            <span class="form__label-text">телефон получателя</span>
+            <input class="form__field" type="text" name="receiver_phone" />
+          </label>
+
+          <label class="form__label form__label-textarea">
+            <span class="form__label-text">поздравительный текст</span>
+            <textarea
+              class="form__field form__field-textarea"
+              type="text"
+              name="message"
+              placeholder="Напишите теплые слова"
+            ></textarea>
+          </label>
+          <button class="form__button" type="submit" disabled>Отправить</button>
+        </form>
       </section>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="/js/script.js"></script>
   </body>
 </html>
